@@ -1,0 +1,23 @@
+{
+  "entity.craver.ambient": {
+    "subtitle": "fromspores.subtitles.entity.craver.ambient",
+    "sounds": [
+      "fromspores:mob/craver/say1",
+      "fromspores:mob/craver/say2",
+      "fromspores:mob/craver/say3"
+    ]
+  },
+  "entity.craver.hurt": {
+    "subtitle": "fromspores.subtitles.entity.craver.hurt",
+    "sounds": [
+      "fromspores:mob/craver/hurt1",
+      "fromspores:mob/craver/hurt2"
+    ]
+  },
+  "entity.craver.death": {
+    "subtitle": "fromspores.subtitles.entity.craver.death",
+    "sounds": [
+      "fromspores:mob/craver/death"
+    ]
+  }
+}

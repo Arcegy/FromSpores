@@ -1,0 +1,13 @@
+{
+  "entity.fromspores.craver": "Craver",
+
+  "fromspores.subtitles.entity.craver.ambient": "Craver croaks",
+  "fromspores.subtitles.entity.craver.hurt": "Craver hurts",
+  "fromspores.subtitles.entity.craver.death": "Craver dies",
+
+  "effect.fromspores.sporing": "Sporing",
+
+  "item.fromspores.craver_spawn_egg": "Craver Spawn Egg",
+  "item.fromspores.fungus_spore": "Fungus Spore",
+  "item.fromspores.spore_bomb": "Spore Bomb"
+}
