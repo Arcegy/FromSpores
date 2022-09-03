@@ -1,0 +1,32 @@
+{
+  "parent": "fromspores:recipes/root",
+  "rewards": {
+    "recipes": [
+      "fromspores:crafting/crafting_shaped/spore_bomb"
+    ]
+  },
+  "criteria": {
+    "has_fungus_spore": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "fromspores:fungus_spore"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "fromspores:crafting/crafting_shaped/spore_bomb"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_fungus_spore",
+      "has_the_recipe"
+    ]
+  ]
+}
