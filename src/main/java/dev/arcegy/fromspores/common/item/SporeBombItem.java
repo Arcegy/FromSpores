@@ -17,11 +17,12 @@ public class SporeBombItem extends Item {
     @Override
     public InteractionResultHolder<ItemStack> use(Level world, Player player, InteractionHand hand) {
         ItemStack itemStack = player.getItemInHand(hand);
+        player.getCooldowns().addCooldown(this, 20);
 
         if (!world.isClientSide) {
             SporeBombEntity sporeBombEntity = new SporeBombEntity(world, player);
             sporeBombEntity.setItem(itemStack);
-            sporeBombEntity.shootFromRotation(player, player.getXRot(), player.getYRot(), -20, 0.5F, 1);
+            sporeBombEntity.shootFromRotation(player, player.getXRot(), player.getYRot(), -15, 1, 0.5F);
             world.addFreshEntity(sporeBombEntity);
         }
 

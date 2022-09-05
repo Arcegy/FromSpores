@@ -51,7 +51,7 @@ public class SporeBombEntity extends ThrowableItemProjectile {
     @Override
     protected void onHit(HitResult result) {
         if (!this.level.isClientSide) {
-            this.playSound(SoundEvents.GENERIC_EXPLODE, 1.0F, 1.0F);
+            this.playSound(SoundEvents.GENERIC_EXPLODE, 1F, 1F);
             this.spawnExplosionCloud();
             this.remove(RemovalReason.DISCARDED);
 
@@ -67,7 +67,7 @@ public class SporeBombEntity extends ThrowableItemProjectile {
 
         areaEffectCloud.setRadius(0.1F);
         areaEffectCloud.setWaitTime(0);
-        areaEffectCloud.setDuration(10);
+        areaEffectCloud.setDuration(15);
         areaEffectCloud.setRadiusPerTick(0);
         areaEffectCloud.setParticle(ParticleTypes.EXPLOSION);
 
@@ -83,8 +83,7 @@ public class SporeBombEntity extends ThrowableItemProjectile {
         areaEffectCloud.setWaitTime(10);
         areaEffectCloud.setDuration(areaEffectCloud.getDuration() / 8);
         areaEffectCloud.setRadiusPerTick(-areaEffectCloud.getRadius() / (float) areaEffectCloud.getDuration());
-        areaEffectCloud.addEffect(new MobEffectInstance(FromSporesMobEffects.SPORING.get(), 300));
-        areaEffectCloud.setParticle(ParticleTypes.ENTITY_EFFECT);
+        areaEffectCloud.addEffect(new MobEffectInstance(FromSporesMobEffects.SPORING.get(), 400));
 
         this.level.addFreshEntity(areaEffectCloud);
     }
