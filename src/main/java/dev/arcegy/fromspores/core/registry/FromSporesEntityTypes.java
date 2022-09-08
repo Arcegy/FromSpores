@@ -18,7 +18,7 @@ public class FromSporesEntityTypes {
     public static final DeferredRegister<EntityType<?>> ENTITY_TYPES = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, FromSpores.MOD_ID);
 
     public static final RegistryObject<EntityType<CraverEntity>> CRAVER = ENTITY_TYPES.register("craver", () ->
-            EntityType.Builder.of(CraverEntity::new, MobCategory.MONSTER).sized(0.8F, 0.6F).clientTrackingRange(15).build(new ResourceLocation(FromSpores.MOD_ID, "craver").toString()));
+            EntityType.Builder.of(CraverEntity::new, MobCategory.MONSTER).sized(0.7F, 0.5F).clientTrackingRange(15).build(new ResourceLocation(FromSpores.MOD_ID, "craver").toString()));
 
     public static final RegistryObject<EntityType<SporeBombEntity>> SPORE_BOMB = ENTITY_TYPES.register("spore_bomb", () ->
             EntityType.Builder.<SporeBombEntity>of(SporeBombEntity::new, MobCategory.MISC).sized(0.25F, 0.25F).clientTrackingRange(4).updateInterval(10).build(new ResourceLocation(FromSpores.MOD_ID, "spore_bomb").toString()));
