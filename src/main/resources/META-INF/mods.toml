@@ -4,7 +4,7 @@ license="All rights reserved"
 
 [[mods]]
 modId="fromspores"
-version="1.0.3"
+version="1.0.4"
 displayName="From Spores"
 #updateJSONURL="https://change.me.example.invalid/updates.json"
 #displayURL="https://change.me.to.your.mods.homepage.example.invalid/"
